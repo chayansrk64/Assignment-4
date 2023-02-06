@@ -47,3 +47,20 @@ console.log(result);
     console.log(result);
     
 }
+// problem-3
+{
+    function isLGSeven(number){
+        if(typeof number !== 'number'){
+            return 'Please input a number!'
+        }
+        let givenNumber = 7;
+        let substract = number - givenNumber;
+        if(substract < givenNumber){
+            return substract;
+        }else {
+            return  number * 2;
+        }   
+    }
+    const result = isLGSeven(6);
+    console.log(result);
+}
