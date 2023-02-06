@@ -64,3 +64,24 @@ console.log(result);
     const result = isLGSeven(6);
     console.log(result);
 }
+// problem-4
+{
+    function findingBadData(array){
+        if(Array.isArray(array) !== true ){
+            return 'Please input an array'
+        }
+        let count =0;
+        for(let i=0; i<array.length; i++){
+            let element = array[i];
+            if(element < 0){
+                count++
+            }
+        }
+        return count
+    }
+    const numbers = [1, 2, 3, -4, -5, -6, -7, 8, -9];
+    const result = findingBadData(numbers)
+    console.log(result);
+}
+
+ 
