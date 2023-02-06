@@ -26,3 +26,24 @@ console.log(result);
     console.log(result);
      
 }
+// Problem-2
+{
+    function evenOdd(character){
+        if(typeof character !== 'string'){
+            return 'Please input a string!'
+        }
+        let count = 0;
+        for(let i = 1; i<=character.length; i++){
+            count = i;
+        }
+        if(count % 2 == 0){
+            return 'even'
+        } else {
+            return 'odd'
+        }
+         
+    }
+    const result = evenOdd('Phero');
+    console.log(result);
+    
+}
