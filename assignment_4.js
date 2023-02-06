@@ -84,4 +84,25 @@ console.log(result);
     console.log(result);
 }
 
+// problem 5
+
+{
+    function gemsToDiamond(firstFriend, secondFriend, thirdFriend){
+        if((typeof firstFriend !== 'number') || (typeof secondFriend !== 'number') || (typeof thirdFriend  !== 'number')){
+            return 'Please input a number!'
+        }
+        const firstFriendGems = firstFriend * 21;
+        const secondFriendGems = secondFriend * 32;
+        const thirdFriendGems = thirdFriend * 43;
+        const allFriendsGems = firstFriendGems+secondFriendGems+thirdFriendGems;
+        if(allFriendsGems > (1000*2)) {
+            let remainingGems = allFriendsGems - (1000*2);
+            return remainingGems;
+        }else {
+            return allFriendsGems;
+        }
+    }
+    const result = gemsToDiamond(100, 5, 1);
+    console.log(result);
+}
  
